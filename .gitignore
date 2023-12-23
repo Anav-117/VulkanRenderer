@@ -1,0 +1,16 @@
+bin/
+Debug/
+x64/
+.vs/
+freeglut.dll
+images/
+
+*.exe
+*.ilk
+*.log
+*.pdb
+*.tlog
+*.obj
+*.gif
+SRTM.asc
+SRTM2.asc

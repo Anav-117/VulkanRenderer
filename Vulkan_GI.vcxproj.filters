@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{07adf9d8-cc10-4f9b-bc2d-d5a33152363a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{88fdab54-ea21-4957-970d-b31b0658e900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irrKlang">
+      <UniqueIdentifier>{6ed9ed20-540a-4662-a7d8-0e42db32d4c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_tables.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\backends\imgui_impl_vulkan.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\backends\imgui_impl_glfw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VulkanConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_rectpack.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_textedit.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_truetype.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\backends\imgui_impl_vulkan.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\backends\imgui_impl_glfw.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ESoundEngineOptions.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ESoundOutputDrivers.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_EStreamModes.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioRecorder.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioStream.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioStreamLoader.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IFileFactory.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IFileReader.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IRefCounted.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_irrKlangTypes.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISound.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundDeviceList.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundEffectControl.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundEngine.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundMixedOutputReceiver.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundSource.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundStopEventReceiver.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IVirtualRefCounted.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_SAudioStreamFormat.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_vec3d.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\irrKlang.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\shader.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\compile.bat">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\fragment.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\vertex.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Cel.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Gooch.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Phong.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Cel.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Gooch.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Phong.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Flat.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Flat.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Normal.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Normal.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Explode.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Explode.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Wireframe.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Wireframe.spv">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Solid.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\Solid.spv">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

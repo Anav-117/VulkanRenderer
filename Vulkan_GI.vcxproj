@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{043379e8-b853-42b8-860e-6e982724f212}</ProjectGuid>
+    <RootNamespace>VulkanGI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)\include;$(SolutionDir)\imgui_master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\include;$(SolutionDir)\imgui-master\backends;$(SolutionDir)\imgui-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\include;$(SolutionDir)\imgui-master\backends;$(SolutionDir)\imgui-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++17</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;FreeImage.lib;glfw3dll.lib;vulkan-1.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++17</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;FreeImage.lib;glfw3dll.lib;vulkan-1.lib;irrKlang.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++17</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;FreeImage.lib;glfw3dll.lib;vulkan-1.lib;irrKlang.lib;irrKlang.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui-master\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="imgui-master\backends\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="imgui-master\imgui.cpp" />
+    <ClCompile Include="imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="imgui-master\imgui_tables.cpp" />
+    <ClCompile Include="imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="VulkanConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui-master\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="imgui-master\backends\imgui_impl_vulkan.h" />
+    <ClInclude Include="imgui-master\imconfig.h" />
+    <ClInclude Include="imgui-master\imgui.h" />
+    <ClInclude Include="imgui-master\imgui_internal.h" />
+    <ClInclude Include="imgui-master\imstb_rectpack.h" />
+    <ClInclude Include="imgui-master\imstb_textedit.h" />
+    <ClInclude Include="imgui-master\imstb_truetype.h" />
+    <ClInclude Include="include\irrklang\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="include\irrklang\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="include\irrklang\ik_EStreamModes.h" />
+    <ClInclude Include="include\irrklang\ik_IAudioRecorder.h" />
+    <ClInclude Include="include\irrklang\ik_IAudioStream.h" />
+    <ClInclude Include="include\irrklang\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="include\irrklang\ik_IFileFactory.h" />
+    <ClInclude Include="include\irrklang\ik_IFileReader.h" />
+    <ClInclude Include="include\irrklang\ik_IRefCounted.h" />
+    <ClInclude Include="include\irrklang\ik_irrKlangTypes.h" />
+    <ClInclude Include="include\irrklang\ik_ISound.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundDeviceList.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundEffectControl.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundEngine.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundSource.h" />
+    <ClInclude Include="include\irrklang\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="include\irrklang\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="include\irrklang\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="include\irrklang\ik_vec3d.h" />
+    <ClInclude Include="include\irrklang\irrKlang.h" />
+    <ClInclude Include="VulkanConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\Cel.frag" />
+    <None Include="shaders\Cel.spv" />
+    <None Include="shaders\compile.bat" />
+    <None Include="shaders\Explode.geom" />
+    <None Include="shaders\Explode.spv" />
+    <None Include="shaders\Flat.frag" />
+    <None Include="shaders\Flat.spv" />
+    <None Include="shaders\fragment.spv" />
+    <None Include="shaders\Gooch.frag" />
+    <None Include="shaders\Gooch.spv" />
+    <None Include="shaders\Normal.frag" />
+    <None Include="shaders\Normal.spv" />
+    <None Include="shaders\Phong.frag" />
+    <None Include="shaders\Phong.spv" />
+    <None Include="shaders\shader.vert" />
+    <None Include="shaders\Solid.frag" />
+    <None Include="shaders\Solid.spv" />
+    <None Include="shaders\vertex.spv" />
+    <None Include="shaders\Wireframe.geom" />
+    <None Include="shaders\Wireframe.spv" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
